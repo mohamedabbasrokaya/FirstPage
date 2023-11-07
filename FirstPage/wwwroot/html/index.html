@@ -1,0 +1,149 @@
+﻿@model EntrySettingViewModel;
+
+
+    @{
+    ViewData["Title"] = "Home Page";
+    }
+
+    <div class="FirstSand">
+        <div class="sand1">
+            <div class="Information">
+                <form class="input">
+                    <label for="code">كود السند:</label>
+                    <input type="text" id="code" name="code"><br>
+
+                    <label for="date">التاريخ:</label>
+                    <input class="Data" type="date" name="date"><br>
+
+                    <label for="Account">الحساب:</label>
+                    <input type="text" id="Account-Box" name="Account" placeholder="search" autocomplete="off">
+                    <button>search</button>
+                    <div class="result-box"></div>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="sand1">
+            <div class="mandop">
+                <form class="input">
+                    <label for="code">مندوب التحصيل :</label>
+                    <input class="mandopEltahseil" type="text" name="code"><br>
+
+                    <label for="number">رقم سند التحصيل :</label>
+                    <input class="NumberSanadEltahseil" type="number" name="number"><br>
+
+
+                </form>
+            </div>
+        </div>
+        <div class="sand1">
+            <div class="EndRow">
+                <form class="input">
+
+                    <label for="code"></label>
+                    <input type="text" class="EndRow" name="code" placeholder="ادخل هنا ما تريد البحث عنو "><br>
+
+
+                </form>
+            </div>
+
+        </div>
+
+        <div class="sand1">
+            <div class="Bayan">
+                <form class="input">
+                    <input class="BayanELsanad" type="text" name="Bayan"><br>
+
+
+                </form>
+
+            </div>
+
+        </div>
+        <div class="sand1">
+            <div class="money">
+                <form class="input">
+                    <label for="money">العمله  : </label>
+                    <input type="text" id="money" name="money" placeholder="جنيه مصري"><br>
+
+                    <label for="number">سعر الصرف  :</label>
+                    <input class="saeirElsarf" type="number" name="number"><br>
+
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="Table">
+
+        <table border="1" width="100%">
+            <thead>
+            <td style="width: 5%"></td>
+            <th>الحساب</th>
+            <th>دائن </th>
+            <th>مدين</th>
+            <th> الشرح</th>
+
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>dhfcb</td>
+                    <td>fgj</td>
+                    <td>fgjgk,</td>
+                    <td>fgkh</td>
+                    <td>fjghkl</td>
+                </tr>
+
+
+            </tbody>
+
+        </table>
+    </div>
+    <div class="molakhus">
+
+        <form class="endInput">
+            <label for="money">دائن  : </label>
+            <input type="text" id="money" name="money">
+            <input type="text" id="text" name="text"><br><br>
+
+        </form>
+        <form class="endInput">
+            <label for="money">مدين  : </label>
+            <input type="text" id="money" name="text">
+            <input type="text" id="text" name="text"><br><br>
+
+        </form>
+    </div>
+
+    </div>
+    <div class="Button">
+
+
+        <div class="cildbutton"><button class="new"><img src="images/">جديد</button></div>
+        <div class="cildbutton"><button class="add"><img src="images/">اضافة</button></div>
+        <div class="cildbutton"><button class="delete"><img src="images/">حذف</button></div>
+        <div class="cildbutton"><button class="print"><img src="images/">طباعه</button></div>
+        <div class="cildbutton"><button class="preview"><img src="images/">معاينه</button></div>
+        <div class="cildbutton"><button class="search"><img src="images/">بحث</button></div>
+        <div class="cildbutton"><button class="close"><img src="images/">اغلاق</button></div>
+        <div class="cildbutton"><button class="move"><img src="images/">ترحيل</button></div>
+
+
+    </div>
+    <!--
+    <button class="btn"><i class="fa fa-home"></i> Home</button>
+    <button class="btn"><i class="fa fa-bars"></i> Menu</button>
+    <button class="btn"><i class="fa fa-trash"></i> Trash</button>
+    <button class="btn"><i class="fa fa-close"></i> Close</button>
+    <button class="btn"><i class="fa fa-folder"></i> Folder</button>
+    -->
+    <script src="index.js"></script>
+

@@ -1,0 +1,164 @@
+﻿
+@using FirstPage.Models;
+@using FirstPage.Models.ViewModel;
+@model GET_ENTRY_SETTINGResult;
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+    <div class="FirstSand">
+    <div class="sand1">
+        <div class="Information">
+                <form class="input" asp-action="Index" asp-controller="Setting">
+                <label asp-for="@Model.ENTRY_SETTING_ID">كود السند:</label>
+
+                <input asp-for="@Model.ENTRY_SETTING_ID" type="text" id="code" name="code"><br>
+                <span asp-validation-for="@Model.ENTRY_SETTING_ID" class="text-danger"></span>
+
+                <label for="date">التاريخ:</label>
+                <input class="Data" type="date" name="date"><br>
+
+                <label asp-for="@Model.ACCOUNTNAME">الحساب:</label>
+                <input asp-for="@Model.ACCOUNTNAME" type=" text" id="Account-Box" name="Account" placeholder="search" autocomplete="off">
+                <span asp-validation-for="@Model.ACCOUNTNAME" class="text-danger"></span>
+
+                <button>search</button>
+                <div class="result-box"></div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="sand1">
+        <div class="mandop">
+                <form class="input" asp-action="Index" asp-controller="Setting">
+
+                <label asp-for="@Model.ENTRY_SETTING_ID">مندوب التحصيل :</label>
+                <input asp-for="@Model.ENTRY_SETTING_ID" class="mandopEltahseil" type="text" name="code"><br>
+                <span asp-validation-for="@Model.ENTRY_SETTING_ID" class="text-danger"></span>
+
+                <label asp-for="@Model.ENTRY_SETTING_ID">رقم سند التحصيل :</label>
+                <input asp-for="@Model.ENTRY_SETTING_ID" class="NumberSanadEltahseil" type="number" name="number"><br>
+                <span asp-validation-for="@Model.ENTRY_SETTING_ID" class="text-danger"></span>
+
+
+            </form>
+        </div>
+    </div>
+    <div class="sand1">
+        <div class="EndRow">
+                <form class="input" asp-action="Index" asp-controller="Setting">
+
+
+                <label for="code"></label>
+                <input type="text" class="EndRow" name="code" placeholder="ادخل هنا ما تريد البحث عنو "><br>
+
+
+            </form>
+        </div>
+
+    </div>
+
+    <div class="sand1">
+        <div class="Bayan">
+                <form class="input" asp-action="Index" asp-controller="Setting">
+
+                <input class="BayanELsanad" type="text" name="Bayan"><br>
+
+
+            </form>
+
+        </div>
+
+    </div>
+    <div class="sand1">
+        <div class="money">
+                <form class="input" asp-action="Index" asp-controller="Setting">
+
+                <label asp-for="@Model.CURRENCYCODE">العمله  : </label>
+                <input asp-for="@Model.CURRENCYCODE" type="text" id="money" name="money" placeholder="جنيه مصري"><br>
+                <span asp-validation-for="@Model.CURRENCYCODE" class="text-danger"></span>
+
+                <label asp-for="@Model.CREDIT_INDEX">سعر الصرف  :</label>
+                <input asp-for="@Model.CREDIT_INDEX" class="saeirElsarf" type="number" name="number"><br>
+                <span asp-validation-for="@Model.CREDIT_INDEX" class="text-danger"></span>
+
+
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+    <!--
+<div class="Table">
+
+    <table border="1" width="100%">
+        <thead>
+        <td style="width: 5%"></td>
+        <th>الحساب</th>
+        <th>دائن </th>
+        <th>مدين</th>
+        <th> الشرح</th>
+
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>dhfcb</td>
+                <td>fgj</td>
+                <td>fgjgk,</td>
+                <td>fgkh</td>
+                <td>fjghkl</td>
+            </tr>
+            
+
+        </tbody>
+
+    </table>
+</div>
+<div class="molakhus">
+
+    <form class="endInput">
+        <label for="money">دائن  : </label>
+        <input type="text" id="money" name="money">
+        <input type="text" id="text" name="text"><br><br>
+
+    </form>
+    <form class="endInput">
+        <label for="money">مدين  : </label>
+        <input type="text" id="money" name="text">
+        <input type="text" id="text" name="text"><br><br>
+
+    </form>
+</div>
+
+    </div>
+<div class="Button">
+
+
+    <div class="cildbutton"><button class="new"><img src="images/">جديد</button></div>
+    <div class="cildbutton"><button class="add"><img src="images/">اضافة</button></div>
+    <div class="cildbutton"><button class="delete"><img src="images/">حذف</button></div>
+    <div class="cildbutton"><button class="print"><img src="images/">طباعه</button></div>
+    <div class="cildbutton"><button class="preview"><img src="images/">معاينه</button></div>
+    <div class="cildbutton"><button class="search"><img src="images/">بحث</button></div>
+    <div class="cildbutton"><button class="close"><img src="images/">اغلاق</button></div>
+    <div class="cildbutton"><button class="move"><img src="images/">ترحيل</button></div>
+
+
+</div>
+-->
+<!--
+<button class="btn"><i class="fa fa-home"></i> Home</button>
+<button class="btn"><i class="fa fa-bars"></i> Menu</button>
+<button class="btn"><i class="fa fa-trash"></i> Trash</button>
+<button class="btn"><i class="fa fa-close"></i> Close</button>
+<button class="btn"><i class="fa fa-folder"></i> Folder</button>
+-->
+<script src="~/js/Index.js"></script>
